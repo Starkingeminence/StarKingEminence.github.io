@@ -13,3 +13,7 @@ a {text-decoration: none; color: black; animation: glowing 1300ms infinite; curs
 .img {width: 100%; height: 200%;}
 .p1 {position: absolute; left: 15px; bottom: 20px; color: blue; font-weight: bold; font-size: 15px;}
 header {position: absolute; left: 130px; top: 0px; color: white; font-size: 30px;}
+.d1 {position: absolute; top: 0px;}
+.d2 {position: absolute; bottom: 0px;}
+.div1 {position: absolute; bottom: 0px}
+.div2 {position: absolute; bottom: 0px}
