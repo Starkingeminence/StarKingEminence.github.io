@@ -1,6 +1,6 @@
 html {background-color: white;}
 body {background-color: ivory;}
-video {width: 100px; height: 200px;}
+video {width: 1000px; height: 2000px;}
 a {text-decoration: none; color: black; animation: glowing 1300ms infinite; cursor: pointer;}
 @keyframes glowing {
     0% {background-color: red; box-shadow: 0 0 10px red;}
@@ -10,7 +10,7 @@ a {text-decoration: none; color: black; animation: glowing 1300ms infinite; curs
 .html {background-color: white;}
 .body {background-color: white;}
 .p {position: absolute; top: 0px; left: 410px; font-size: 70px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-.img {width: 100px; height: 200px;}
+.img {width: 1000px; height: 2000px;}
 .p1 {color: blue; font-weight: bold; font-size: 15px;}
 header {position: absolute; left: 130px; top: 0px; color: white; font-size: 30px;}
 .d1 {position: absolute; top: 0px;}
