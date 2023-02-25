@@ -14,9 +14,9 @@ a {text-decoration: none; color: black; animation: glowing 1300ms infinite; curs
 .p1 {color: blue; font-weight: bold; font-size: 15px;}
 head {background-color: black; position: absolute; left: 130px; top: 0px; color: Black; font-size: 30px;}
 .d1 {position: absolute; top: 0px;}
-.d2 {position: absolute; bottom: 0px;}
+.d2 {position: absolute; right: 0px; bottom: 0px;}
 .div1 {position: absolute; top: 0px}
 .a1 {position: absolute; bottom: 0px; left: 0px;}
 .a2 {position: absolute; bottom: -300px; right: 0px;}
 .a3 {position: absolute; bottom: 0px; left: 0px;}
-.unknown {width: 1500;}
+.unknown {width: 2000;}
