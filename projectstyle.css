@@ -12,7 +12,7 @@ a {text-decoration: none; color: black; animation: glowing 1300ms infinite; curs
 .p {position: absolute; top: 0px; left: 410px; font-size: 70px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 .img {width: 1000px; height: 2000px;}
 .p1 {color: blue; font-weight: bold; font-size: 15px;}
-header {position: absolute; left: 130px; top: 0px; color: white; font-size: 30px;}
+header {position: absolute; left: 130px; top: 0px; color: Black; font-size: 30px;}
 .d1 {position: absolute; top: 0px;}
 .d2 {position: absolute; bottom: 0px;}
 .div1 {position: absolute; top: 0px}
