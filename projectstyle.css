@@ -1,6 +1,6 @@
 html {background-color: white;}
 body {background-color: ivory;}
-video {width: 1000px; height: 1300px;}
+video {width: 1000px; height: 1200px;}
 a {text-decoration: none; color: black; animation: glowing 1300ms infinite; cursor: pointer;}
 @keyframes glowing {
     0% {background-color: red; box-shadow: 0 0 10px red;}
@@ -10,13 +10,12 @@ a {text-decoration: none; color: black; animation: glowing 1300ms infinite; curs
 .html {background-color: white;}
 .body {background-color: white;}
 .p {position: absolute; top: 0px; left: 410px; font-size: 70px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-.img {width: 1000px; height: 2000px; filter: opacity (59%);}
+.img {width: 1000px; height: 2000px; filter: opacity (39%);}
 .p1 {color: blue; font-weight: bold; font-size: 15px;}
-head {background-color: black; position: absolute; left: 130px; top: 0px; color: Black; font-size: 30px;}
+header {background-color: black; position: absolute; left: 130px; top: 0px; color: Black; font-size: 30px;}
 .d1 {position: absolute; top: 0px;}
 .d2 {position: absolute; right: 0px; bottom: 0px;}
 .div1 {position: absolute; top: 0px}
-.a1 {position: absolute; bottom: 0px; left: 0px;}
-.a2 {position: absolute; bottom: -300px; right: 0px;}
-.a3 {position: absolute; bottom: 0px; left: 0px;}
+.div2 {position: absolute; bottom: 0px; right: 0px;}
+.div3 {position: absolute; bottom: 0px; left: 0px;}
 .unknown {width: 2000;}
