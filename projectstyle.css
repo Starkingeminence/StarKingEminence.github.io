@@ -19,4 +19,4 @@ head {position: absolute; left: 130px; top: 0px; color: white; font-size: 30px;}
 .div2 {position: absolute; bottom: 0px; right: 0px;}
 .div3 {position: absolute; bottom: 0px; right: 0px;}
 .unknown {width: 2000; background-color: black;}
-.body2 {background-color: black;}
+.body2 {background-color: black; white-space: nowrap;}
