@@ -12,11 +12,11 @@ a {text-decoration: none; color: black; animation: glowing 1300ms infinite; curs
 .p {position: absolute; top: 0px; left: 410px; font-size: 70px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; filter: opacity (100%);}
 .img {width: 1000px; height: 1500px; filter: opacity (19%);}
 .p1 {color: blue; font-weight: bold; font-size: 15px;}
-head {position: absolute; left: 130px; top: 0px; color: white; font-size: 30px;}
+header {position: absolute; left: 130px; top: 0px; color: white; font-size: 30px;}
 .d1 {position: absolute; top: 0px;}
 .d2 {position: absolute; right: 0px; bottom: 0px;}
 .div1 {position: absolute; top: 0px}
 .div2 {position: absolute; bottom: 0px; right: 0px;}
 .div3 {position: absolute; bottom: 0px; right: 0px;}
-.unknown {width: 2000; background-color: black; transform: rotate(90deg);}
+.unknown {width: 2000; background-color: black; transform: rotate(90deg); text-align: center;}
 .body2 {background-color: black; white-space: nowrap;}
