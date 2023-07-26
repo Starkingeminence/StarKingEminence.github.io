@@ -1,0 +1,109 @@
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gold;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup h2 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.scrapbook {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  flex: 1;
+  padding-left: 20px; /* Add some spacing between image and text */
+}
+
+.picture {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture img {
+  max-width: 100%;
+  border-radius: 8px;
+  transform-origin: top left;
+}
+
+.picture-left img {
+  transform: rotate(-5deg);
+}
+
+.picture-right img {
+  transform: rotate(5deg);
+}
+
+.button {
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
