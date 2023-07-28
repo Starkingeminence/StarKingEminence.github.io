@@ -8,11 +8,9 @@ window.onload = function() {
     videoContainer.style.display = 'none';
   }
 
-  popup.onclick = function() {
-    videoContainer.innerHTML = `<video id="confettiVideo" autoplay loop muted>
+  videoContainer.innerHTML = `<video id="confettiVideo" autoplay loop muted>
       <source src="${videoPath}" type="video/mp4">
     </video>`;
-    videoContainer.style.display = 'block';
-    setTimeout(closeVideoPopup, 10000); // Adjust the time in milliseconds (5000ms = 5 seconds) for how long the popup stays open
-  };
+
+  setTimeout(closeVideoPopup, 10000); // Adjust the time in milliseconds (5000ms = 5 seconds) for how long the popup stays open
 };
