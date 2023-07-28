@@ -5,7 +5,7 @@ function login() {
   
   if (password === "I love you") {
     // Redirect to the next page or show a success message
-    window.location.href = "next_page.html";
+    window.location.href = "index2.html";
     button.style.backgroundColor = "green";
     errorMsg.textContent = ""; // Clear any previous error messages
     errorMsg.classList.remove("error");
