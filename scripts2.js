@@ -1,15 +1,13 @@
 window.onload = function() {
   const videoContainer = document.getElementById('videoContainer');
-  const video = document.getElementById('confettiVideo');
-  const popup = document.querySelector('.popup');
+  const popup = document.getElementById('popup');
 
-  video.onended = function() {
-    video.currentTime = 0;
-    video.play();
-  };
+  function closeVideoPopup() {
+    videoContainer.style.display = 'none';
+  }
 
   popup.onclick = function() {
     videoContainer.style.display = 'block';
-    video.play();
+    setTimeout(closeVideoPopup, 5000); // Adjust the time in milliseconds (5000ms = 5 seconds) for how long the popup stays open
   };
 };
