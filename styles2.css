@@ -1,19 +1,16 @@
-.video-container {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   position: relative;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .popup {
-  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,11 +19,8 @@ video {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
-.popup.show {
-  display: block;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 .popup h2 {
@@ -36,74 +30,27 @@ video {
   margin: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.heading {
-  text-align: center;
-}
-
-.content {
-  margin-top: 20px;
-}
-
-.scrapbook {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.text {
-  flex: 1;
-  padding-left: 20px; /* Add some spacing between image and text */
-}
-
-.picture {
+.popup img {
+  display: block;
   max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 10px;
 }
 
-.picture img {
-  max-width: 100%;
-  border-radius: 8px;
-  transform-origin: top left;
+.video-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
 }
 
-.picture-left img {
-  transform: rotate(-5deg);
-}
-
-.picture-right img {
-  transform: rotate(5deg);
-}
-
-.button {
-  text-align: right;
-  margin-top: 20px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 20px;
-  color: #777;
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
