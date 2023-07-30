@@ -7,98 +7,24 @@
     body {
       margin: 0;
       padding: 0;
-      overflow: hidden;
     }
 
     .container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .popup {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: gold;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
-      z-index: 1000;
-    }
-
-    .popup h2 {
-      font-size: 24px;
-      color: #fff;
-      text-align: center;
-      margin: 0;
-    }
-
-    .video-container {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
-      z-index: 999;
     }
 
     .cover-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    @keyframes confettiAnimation {
-      0% {
-        transform: translateY(-100%);
-      }
-      100% {
-        transform: translateY(100%);
-      }
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <img class="cover-image" src="Project_Praise.png" alt="Happy Birthday Image">
-    <div class="popup" id="popup">
-      <h2>Happy Birthday</h2>
-    </div>
   </div>
-  <div class="video-container" id="videoContainer"></div>
-
-  <script>
-    window.onload = function() {
-      const videoContainer = document.getElementById('videoContainer');
-      const popup = document.getElementById('popup');
-
-      const videoPath = "colorful-confetti-particles-falling-over-white-background-confetti-falling-cele.mp4";
-      const confettiVideo = document.createElement('video');
-
-      function closeVideoPopup() {
-        videoContainer.style.display = 'none';
-        popup.style.display = 'none';
-      }
-
-      confettiVideo.setAttribute('autoplay', 'true');
-      confettiVideo.setAttribute('loop', 'true');
-      confettiVideo.setAttribute('muted', 'true');
-
-      confettiVideo.innerHTML = `<source src="${videoPath}" type="video/mp4">`;
-
-      videoContainer.appendChild(confettiVideo);
-      videoContainer.style.display = 'block';
-      popup.style.display = 'block';
-      setTimeout(closeVideoPopup, 500000); // Adjust the time in milliseconds (5000ms = 5 seconds) for how long the popup stays open
-    };
-  </script>
 </body>
 </html>
