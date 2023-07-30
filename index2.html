@@ -47,6 +47,15 @@
       z-index: 999;
     }
 
+    .cover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     @keyframes confettiAnimation {
       0% {
         transform: translateY(-100%);
@@ -59,7 +68,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="Project_Praise.png" alt="Happy Birthday Image">
+    <img class="cover-image" src="Project_Praise.png" alt="Happy Birthday Image">
     <div class="popup" id="popup">
       <h2>Happy Birthday</h2>
     </div>
@@ -76,6 +85,7 @@
 
       function closeVideoPopup() {
         videoContainer.style.display = 'none';
+        popup.style.display = 'none';
       }
 
       confettiVideo.setAttribute('autoplay', 'true');
@@ -86,7 +96,8 @@
 
       videoContainer.appendChild(confettiVideo);
       videoContainer.style.display = 'block';
-      setTimeout(closeVideoPopup, 5000); // Adjust the time in milliseconds (5000ms = 5 seconds) for how long the popup stays open
+      popup.style.display = 'block';
+      setTimeout(closeVideoPopup, 500000); // Adjust the time in milliseconds (5000ms = 5 seconds) for how long the popup stays open
     };
   </script>
 </body>
